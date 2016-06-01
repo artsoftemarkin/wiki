@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{{ page.getName() }}</title>
+        
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <a href="localhost/{{ page.getName() }}/add">add</a>
+        <a href="localhost/{{ page.getName() }}/edit">edit</a>
+        <a href="localhost/{{ page.getName() }}/delete">delete</a>
+        <p>{{ page.getName() }}</p>
+        <p>{{ page.getId() }}</p>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
